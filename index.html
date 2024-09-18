@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<style>
+    body{
+        background-color: rgb(236, 209, 209);
+    }
+</style>
+<body>
+    <h1>Todo List📑</h1>
+    <form id="form">
+        <label for="firstinput">Todo Name:</label>
+        <input type="text" name="todoname" id="firstinput">
+
+        <label for="secondinput">Description:</label>
+        <input type="text" name="description" id="secondinput">
+
+        <button id="add">Add</button>
+    </form>
+    <div>
+        <h2>Todos Remaining</h2>
+        <ul id="listofitem"></ul>
+    </div>
+    <div> 
+        <h2>Todos Done✅</h2>
+        <ol id="orderlist"></ol>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
